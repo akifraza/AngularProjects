@@ -1,0 +1,20 @@
+.raised {
+  width: 100%;
+  height: 50vh;
+  color: rgb(118, 161, 37);
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px blue;}
+}
+
+@keyframes mytext {
+  50% {text-shadow: 10px 20px 30px blue;}
+}
+.raised-text {
+  color: white;
+  animation: mytext 5s infinite;
+}
+
+

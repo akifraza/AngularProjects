@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <span><a mat-icon-button routerLink="/">Consumer Loan Application</a></span>
+    <span class="spacer"></span>
+
+    <a *ngIf="loggedIn" mat-icon-button>{{username.name}}</a>
+    <span class="space-user"></span>
+    <a *ngIf="!loggedIn" mat-icon-button routerLink="/login">Login</a>
+    <a *ngIf="loggedIn" (click)="logoutUser()" mat-icon-button >Logout</a>
+</mat-toolbar>
+
